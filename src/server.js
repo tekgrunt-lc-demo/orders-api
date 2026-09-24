@@ -1,4 +1,5 @@
 const express = require("express");
+const argv = require("minimist")(process.argv.slice(2));
 
 const app = express();
 app.use(express.json());
@@ -19,5 +20,5 @@ app.post("/orders", (req, res) => {
   res.status(201).json(order);
 });
 
-const port = process.env.PORT || 9000;
+const port = argv.port || process.env.PORT || 9000;
 app.listen(port, () => console.log(`orders-api listening on ${port}`));
