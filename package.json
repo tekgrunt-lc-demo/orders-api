@@ -1,0 +1,13 @@
+{
+  "name": "orders-api",
+  "version": "1.0.0",
+  "description": "Small demo service: lists and creates orders.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
